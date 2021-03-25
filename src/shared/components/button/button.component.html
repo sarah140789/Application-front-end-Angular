@@ -1,0 +1,8 @@
+<button style=" background-color: #146455;">
+  <i class="chevron" [ngClass]="{'right' : chevronPos ==='right', 'left': chevronPos === 'left'}"></i>
+</button>
+
+<button *ngIf="text" [type]="typeButton" [disabled]="disabled" (click)="BtnClick()">
+  {{text}}
+</button>
+

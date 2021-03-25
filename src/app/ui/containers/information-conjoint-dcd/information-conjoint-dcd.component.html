@@ -1,0 +1,38 @@
+<app-timeline></app-timeline>
+<section class="inline-block">
+  <div class="block-left">
+    <h1 [innerHTML]="i18n?.etape2.titre"></h1>
+    <p [innerHTML]="i18n?.etape2.sousTitre"></p>
+    <form [formGroup]="appInputFormDcd">
+      <section class="vertical-spacing">
+        <span [innerHTML]="i18n?.etape2.dateDeces"></span>
+        <app-input class="input-date" placeholder="JJ"   formControlName="jour"  [type]="'text'"></app-input>
+        <app-input class="input-date" placeholder="MM"   formControlName="mois"  [type]="'text'"></app-input>
+        <app-input class="input-date" placeholder="AAAA" formControlName="annee" [type]="'text'"></app-input>
+      </section>
+
+      <section class="vertical-spacing">
+        <span [innerHTML]="i18n?.etape2.cotisationRG"></span>
+        <app-oui-non formControlName="affilation"></app-oui-non>
+      </section>
+    </form>
+  </div>
+  <div class="block-right">
+    <aside>
+      <app-recapitulatif></app-recapitulatif>
+    </aside>
+  </div>
+  <div class="block-left-70">
+    <hr>
+    <app-button text="Etape précédente" chevronPos="left" (BtnSubmitted)="previousRoute()" class="to-left"></app-button>
+    <app-button text="Etape suivante" chevronPos="right" typeButton="submit" (BtnSubmitted)="submitForm()" [disabled]="appInputFormDcd.invalid" class="to-right"></app-button>
+  </div>
+</section>
+
+<div id="debug">
+  <pre><code>{{ appInputFormDcd.value | json }}</code></pre>
+  <pre><code>{{ appInputFormDcd.status | json}}</code></pre>
+</div>
+
+
+

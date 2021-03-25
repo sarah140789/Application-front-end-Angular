@@ -1,0 +1,505 @@
+<app-timeline></app-timeline>
+<br>
+<section class="inline-block">
+  <div class="block-left-70">
+    <h1 class="mi"[innerHTML]="i18n.etape3.titre"></h1>
+    <!--PR celibataire-->
+    <p class="ress"[innerHTML]="i18n.etape3.sousTitrePRCelibataire"></p>
+    <img class="img"src="https://www.lassuranceretraite.fr/simulPR-sapp-ng/media/images/simPR/ress1_sal.png"/>
+    <p [innerHTML]="i18n.etape3.ressourcesLegend" class="pst"></p>
+    <!--Revenus pro d activites-->
+    <form [formGroup]="appInputFormRess">
+    <mat-expansion-panel #panel1 hideToggle >
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[0].titre"></p>
+        <p [innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[0].titreCourt"></p>
+        <div class="container">
+            <div class="row">    
+            <div class="col-sm1">
+            <input class="input" type="text" name="salaires" placeholder="0"/>
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="salaires" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="salaires" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <br>
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].titre"></p>
+        <p [innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].titreCourt"></p>
+        <p [innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].sousTitre"></p>
+        <input class="input" type="text" name="revenusIndustriels" placeholder="0" />€  
+    
+    
+    <mat-expansion-panel-header >  
+    <mat-action-row>           
+        <mat-icon >{{panel1.expanded? 'remove' : 'add'}}</mat-icon>
+    </mat-action-row> 
+    <mat-panel-description [innerHTML]="i18n.etape3.categoriesPR[0].titre" class="ps">
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+   
+    </form>
+    <br>
+    <!--Retraites-->
+
+    <mat-expansion-panel #panel2  hideToggle>
+        
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[1].sousCategories[0].titre"></p>
+        <p [innerHTML]="i18n.etape3.categoriesPR[1].sousCategories[0].titreCourt"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="base" placeholder="0" />
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="base" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="base" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <br>
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].titre"></p>
+        <p [innerHTML]="i18n.etape3.categoriesPR[1].sousCategories[1].titreCourt"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="complementaire" placeholder="0" />
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="complementaire" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="complementaire" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        
+     <mat-expansion-panel-header >        
+        <mat-action-row>           
+            <mat-icon >{{panel2.expanded? 'remove' : 'add'}}</mat-icon>
+        </mat-action-row> 
+          <mat-panel-description [innerHTML]="i18n.etape3.categoriesPR[1].titre" class="ps">
+          </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <br>
+
+    <!--Revenus de remplacement-->
+    <mat-expansion-panel #panel3  hideToggle>
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[0].titre"></p>
+        <p [innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[0].titreCourt"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="chomage" placeholder="0" />
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="chomage" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="chomage" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <br>
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[1].titre"></p>
+        <p [innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[1].titreCourt"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="maladie" placeholder="0" />
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="maladie" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="maladie" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+     <mat-expansion-panel-header >        
+        <mat-icon >{{panel3.expanded? 'remove' : 'add'}}</mat-icon>
+          <mat-panel-description [innerHTML]="i18n.etape3.categoriesPR[2].titre" class="ps">
+          </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <br>
+    <!--Autres revenus-->
+    <mat-expansion-panel #panel4  hideToggle>
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[0].titre"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="pensionalimentaire" placeholder="0" />
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="pensionalimentaire" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="pension alimentaire" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <br>
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[1].titre"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="pensionInvalidite" placeholder="0" />
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <br>
+        <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[2].titre"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <br>
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[3].titre"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="renteAT" placeholder="0" />
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="renteAT" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="renteAT" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+     <mat-expansion-panel-header >        
+        <mat-icon class="bouton4">{{panel4.expanded? 'remove' : 'add'}}</mat-icon>
+          <mat-panel-description [innerHTML]="i18n.etape3.categoriesPR[3].titre" class="ps">
+          </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <br>
+    
+    <!--PR veuvage-->
+    <p class="ress"[innerHTML]="i18n.etape3.sousTitrePRCelibataire"></p>
+    <img class="img"src="https://www.lassuranceretraite.fr/simulPR-sapp-ng/media/images/simPR/ress1_sal.png"/>
+    <p [innerHTML]="i18n.etape3.ressourcesLegend" class="pst"></p>
+    <!--Ressources actuelles-->
+    
+        <div id="€5">
+                <p class="sousc"[innerHTML]="i18n.etape3.categoriesVeuvage[0].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="avantCalcul" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="avantCalcul" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="avantCalcul" placeholder="0" />€   
+                </div>
+                </div>
+                
+           
+        </div>
+        </div>
+        <br>
+        <!--Ressources avant le deces-->
+    
+     <div id="€6">
+                <p class="sousc"[innerHTML]="i18n.etape3.categoriesVeuvage[1].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="avantdeces" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="avantdeces" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="avantdeces" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+        
+        </div>
+      
+        <br>
+        
+    <!--PR couple-->
+    <p class="ress"[innerHTML]="i18n.etape3.sousTitrePRCouple"></p>
+    <img class="img"src="https://www.lassuranceretraite.fr/simulPR-sapp-ng/media/images/simPR/ress1_sal.png"/>
+    <p [innerHTML]="i18n.etape3.conjoint.ressourcesLegend" class="pst"></p>
+    <!--Revenus professionnels d'activites-->
+    <mat-expansion-panel #panel5  hideToggle>
+        <div>
+     
+            <div id="€7">
+                    <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[0].titre"></p>
+                    <p [innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[0].titreCourt"></p>
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm1">
+                        <input class="input" type="text" name="salaires" placeholder="0" />
+                        </div>
+                        <div class="col-sm2">
+                        <input class="input" type="text" name="salaires" placeholder="0" />€
+                        </div>
+                        <div class="col-sm3">
+                        <input class="input" type="text" name="salaires" placeholder="0" />€   
+                    </div>
+                    </div>
+                    </div>
+                    <br>
+                    <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[1].titre"></p>
+                    <p [innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[1].titreCourt"></p>
+                    <p [innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[1].sousTitre"></p>
+                    <input class="input" type="text" name="revenusIndustriels" placeholder="0" />€
+                       
+            </div>
+            </div>
+    <mat-expansion-panel-header >  
+    <mat-action-row>           
+        <mat-icon >{{panel5.expanded? 'remove' : 'add'}}</mat-icon>
+    </mat-action-row> 
+    <mat-panel-description [innerHTML]="i18n.etape3.conjoint.categories[0].titre" class="ps">
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    
+    <br>
+    <!--retraites-->
+    <mat-expansion-panel #panel6  hideToggle>
+    <div >
+      
+        <div id="€8">
+                <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[0].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="base" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="base" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="base" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+                <br>
+                <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[1].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="complementaire" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="complementaire" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="complementaire" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+                <br>
+                <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[2].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="reversionBase" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="reversionBase" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="reversionBase" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+                <br>
+                <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[3].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="reversionComplementaire" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="reversionComplementaire" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="reversionComplementaire" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+                <input type="hidden"  >    
+        </div>
+        </div>
+        <br>
+    <mat-expansion-panel-header >  
+    <mat-action-row>           
+        <mat-icon >{{panel6.expanded? 'remove' : 'add'}}</mat-icon>
+    </mat-action-row> 
+    <mat-panel-description [innerHTML]="i18n.etape3.conjoint.categories[1].titre" class="ps">
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    <br>
+    <!--Revenus de remplacement-->
+    <mat-expansion-panel #panel7  hideToggle>
+        <div >
+            
+            <div id="€9">
+                    <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[0].titre"></p>
+                    <p [innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[0].titreCourt"></p>
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm1">
+                        <input class="input" type="text" name="chomage" placeholder="0" />
+                        </div>
+                        <div class="col-sm2">
+                        <input class="input" type="text" name="chomage" placeholder="0" />€
+                        </div>
+                        <div class="col-sm3">
+                        <input class="input" type="text" name="chomage" placeholder="0" />€   
+                    </div>
+                    </div>
+                    </div>
+                    <br>
+                    <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[1].titre"></p>
+                    <p [innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[1].titreCourt"></p>
+                    <div class="container">
+                        <div class="row">
+                        <div class="col-sm1">
+                        <input class="input" type="text" name="maladie" placeholder="0" />
+                        </div>
+                        <div class="col-sm2">
+                        <input class="input" type="text" name="maladie" placeholder="0" />€
+                        </div>
+                        <div class="col-sm3">
+                        <input class="input" type="text" name="maladie" placeholder="0" />€   
+                    </div>
+                    </div>
+                    </div>
+                    <input type="hidden"  >    
+            </div>
+            </div>
+    <mat-expansion-panel-header >  
+    <mat-action-row>           
+        <mat-icon >{{panel7.expanded? 'remove' : 'add'}}</mat-icon>
+    </mat-action-row> 
+    <mat-panel-description [innerHTML]="i18n.etape3.conjoint.categories[2].titre" class="ps">
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    
+    <br>
+    <!--Autres revenus-->
+    <mat-expansion-panel #panel8  hideToggle>
+    
+        <div >
+    
+            <div id="€4">
+                <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[0].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="pensionalimentaire" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="pensionalimentaire" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="pension alimentaire" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+                <br>
+                <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[1].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="pensionInvalidite" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+                <br>
+                <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[2].titre"></p>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-sm1">
+                    <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />
+                    </div>
+                    <div class="col-sm2">
+                    <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€
+                    </div>
+                    <div class="col-sm3">
+                    <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€   
+                </div>
+                </div>
+                </div>
+                <br>
+            <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[3].titre"></p>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm1">
+                <input class="input" type="text" name="renteAT" placeholder="0" />
+                </div>
+                <div class="col-sm2">
+                <input class="input" type="text" name="renteAT" placeholder="0" />€
+                </div>
+                <div class="col-sm3">
+                <input class="input" type="text" name="renteAT" placeholder="0" />€   
+            </div>
+            </div>
+            </div>
+            <input type="hidden"  >    
+        </div>
+        </div>
+    <mat-expansion-panel-header >  
+    <mat-action-row>           
+        <mat-icon class="bouton4" >{{panel8.expanded? 'remove' : 'add'}}</mat-icon>
+    </mat-action-row> 
+    <mat-panel-description [innerHTML]="i18n.etape3.categoriesPR[3].titre" class="ps">
+    </mat-panel-description>
+    </mat-expansion-panel-header>
+    </mat-expansion-panel>
+    
+    
+    <br>
+  <div class="block-right">
+    <aside>
+      <app-recapitulatif></app-recapitulatif>
+    </aside>
+  </div>
+  <div class="block-left-70">
+    <hr>
+    <app-button text="Etape précédente" chevronPos="left" (BtnSubmitted)="previousRoute()" class="to-left"></app-button>
+    <app-button text="Etatpe suivante" chevronPos="right" (BtnSubmitted)="nextRoute()" class="to-right"></app-button>
+  </div>
+

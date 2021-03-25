@@ -1,0 +1,53 @@
+<app-timeline></app-timeline>
+<section class="inline-block">
+  <div class="block-left">
+    <h1 [innerHTML]="i18n?.etape1.titre"></h1>
+    <p [innerHTML]="i18n?.etape1.sousTitre"></p>
+    <form [formGroup]="appInputForm">
+      <section class="vertical-spacing">
+        <span [innerHTML]="i18n?.etape1.dateNaissance"></span>
+        <app-input class="input-date" placeholder="JJ"   formControlName="jour"  [type]="'text'"></app-input>
+        <app-input class="input-date" placeholder="MM"   formControlName="mois"  [type]="'text'"></app-input>
+        <app-input class="input-date" placeholder="AAAA" formControlName="annee" [type]="'text'"></app-input>
+      </section>
+
+      <section class="vertical-spacing">
+        <span [innerHTML]="i18n?.etape1.marie"></span>
+        <app-oui-non formControlName="marie"></app-oui-non>
+      </section>
+
+      <section class="vertical-spacing" *ngIf="appInputForm?.value.marie === 'Oui'">
+        <span [innerHTML]="i18n?.etape1.marieMomentDeces"></span>
+        <app-oui-non formControlName="decee"></app-oui-non>
+      </section>
+
+      <section>
+        <span [innerHTML]="i18n?.etape1.enCouple"></span>
+        <app-oui-non formControlName="couple"></app-oui-non>
+      </section>
+
+    </form>
+  </div>
+  <div class="block-right">
+    <aside>
+      <app-recapitulatif></app-recapitulatif>
+    </aside>
+  </div>
+</section>
+<hr>
+<app-button
+  text="Etape suivante"
+  chevronPos="right"
+  typeButton="submit"
+  (BtnSubmitted)="submitForm()"
+  [disabled]="appInputForm.invalid"
+  class="to-right">
+</app-button>
+<div id="debug">
+  <pre><code>{{ appInputForm.value | json }}</code></pre>
+  <pre><code>{{ appInputForm.status | json}}</code></pre>
+</div>
+
+
+
+

@@ -1,0 +1,11 @@
+<section id="presentation">
+  <h1 [innerHTML]="i18n?.titre"></h1>
+  <br>
+  <p [innerHTML]="i18n?.presentation.intro">
+  <br>
+  <hr>
+  <br>
+  <app-button text="Démarrer ma simulation" chevronPos="right" (BtnSubmitted)="eventClick()" class="to-right"></app-button>
+</section>
+
+

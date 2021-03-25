@@ -1,0 +1,107 @@
+<app-timeline></app-timeline>
+<br>
+<body>
+<!--Retraite de reversion-->
+<p [innerHTML]="i18n.etape4.titre_eligible_pr" class="resu"></p>
+<p>Cette simulation ne constitue pas un engagement de notre part, seule l’étude de votre demande déposée auprès de nos services vaudra décision.</p>
+<p class="g">La retraite de réversion n’est pas attribuée automatiquement, vous devez en faire la demande :</p>
+<br>
+<p>Si vous résidez en France :</p>
+<br>
+<div>1.<a href="i18n.etape4.lien_formulaire_demande_pr" class="s">Téléchargez</a> et complétez le formulaire ;</div>
+<div>2.adressez, par courrier, votre demande à <a href="i18n.etape4.lien_caisse_regionale" class="s">votre caisse régionale de retraite.</a></div>
+<br>
+<div>Si vous résidez à l’étranger,<a href="https://www.lassuranceretraite.fr/portail-info/home/retraite/mes-demarches/demarche-cas-deces.html" class="s">consultez notre article dédié.</a></div>
+<br>
+<div><a href="i18n.etape4.lien_demarches_pr" class="s">En savoir plus sur les démarches.</a></div>
+<br>
+<p><strong>À noter</strong> : si votre dossier est complet dès le dépôt de votre demande et si vous remplissez les conditions 
+    d’attribution de la retraite de réversion, vous bénéficierez d’une garantie de versement de votre retraite. 
+    À ce titre, nous nous engageons à ce que 
+    votre premier paiement intervienne dans un délai de 4 mois à compter de la date de réception de votre dossier</p>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<p>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr.</a></p>
+
+<!--Allocation veuvage-->
+<p [innerHTML]="i18n.etape4.titre_eligible_veuvage" class="resu"></p>
+<p>Cette simulation ne constitue pas un engagement de notre part, seule l’étude de votre demande déposée auprès de nos services vaudra décision.</p>
+<p class="g">L’allocation veuvage n’est pas attribuée automatiquement, vous devez en faire la demande :</p>
+<br>
+<div>1.<a href="i18n.etape4.lien_formulaire_demande_veuvage" class="s">Téléchargez</a> et complétez le formulaire ;</div>
+<div>2.adressez, par courrier, votre demande à l’adresse suivante :</div>
+<br>
+<div><a href="i18n.etape4.lien_demarches_pr" class="s">En savoir plus sur les démarches</a></div>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<div>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr</a></div>
+<br>
+<p class="adresse">
+    Carsat Bourgogne-Franche Comté<br>
+    Centre national de traitement de l’allocation veuvage<br>
+    21044 Dijon Cedex   
+</p>
+
+
+<!--Ni Retraite de reversion ni Allocation veuvage-->
+<p [innerHTML]="i18n.etape4.titre_nonEligible_global" class="resu"></p>
+<br>
+<!--Pas marie avec le defunt-->
+<p [innerHTML]="i18n.etape4.motif_rejet_ve_405" ></p>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<div>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr</a></div>
+<br>
+<!--Pas marie avec le defunt au moment du deces-->
+<p [innerHTML]="i18n.etape4.titre_nonEligible_veuvage" class="resu"></p>
+<br>
+<p [innerHTML]="i18n.etape4.motif_rejet_ve_406" ></p>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<div>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr</a></div>
+<br>
+<!--Pas de cotisation au regime general-->
+<p [innerHTML]="i18n.etape4.titre_nonEligible_pr" class="resu"></p>
+<br>
+<p [innerHTML]="i18n.etape4.motif_rejet_ve_408" ></p>
+<br>
+<div><a href="https://www.conseiller.info-retraite.fr/BUzeTbZm+4xFcLMj3CHqit2IBPHf2iL55n+ogOmCrZQ=/mesregimes" class="s">Nous vous invitons à vous renseigner auprès des organismes auxquels a cotisé la personne décédée. </a></div>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<div>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr</a></div>
+<br>
+<!--Décedee plus de deux ans-->
+<p [innerHTML]="i18n.etape4.titre_nonEligible_global" class="resu"></p>
+<br>
+<p [innerHTML]="i18n.etape4.motif_rejet_ve_409" ></p>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<div>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr</a></div>
+<br>
+<!--Remarié(e)-->
+<p [innerHTML]="i18n.etape4.titre_nonEligible_veuvage" class="resu"></p>
+<br>
+<p [innerHTML]="i18n.etape4.motif_rejet_ve_410" ></p>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<div>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr</a></div>
+<br>
+<!--Plafond dépassée-->
+<p [innerHTML]="i18n.etape4.titre_nonEligible_pr" class="resu"></p>
+<br>
+<div>Les ressources que vous avez déclarées dépassent <a href="https://www.legislation.cnav.fr/Pages/bareme.aspx?Nom=retraite_reversion_plafond_ressource_bar" class="s">le plafond autorisé.</a></div>
+<br>
+<p class="g">Bon à savoir !</p>
+<br>
+<div>Pour tester votre éligibilité à d'autres allocations, connectez-vous à <a href="i18n.etape4.lien_mes_aides" class="s">mes-aides.gouv.fr</a></div>
+<br>
+<br>
+</body>
+

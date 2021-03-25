@@ -1,0 +1,37 @@
+
+.un-styling-button {
+  width: 52px;
+  height: 41px;
+  font-size: 14px;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #30C2A6;
+}
+
+button.un-styling-button:first-child {
+  border-right: none;
+}
+
+button.un-styling-button.desactive-element:focus {
+  background: repeating-linear-gradient(
+      45deg,
+      #c8efe7,
+      #c8efe7 10px,
+      white 10px,
+      white 20px
+  );
+}
+
+button.un-styling-button::-moz-focus-inner{
+  border: 0;
+}
+
+.active-element {
+  background-color: #30C2A6;
+  color: black;
+}
+.desactive-element {
+  background-color: white;
+  color: #146455;
+}
+

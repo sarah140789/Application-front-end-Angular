@@ -1,0 +1,301 @@
+{
+  "timeline":{
+    "etapes":[
+      {
+        "libelle":"Présentation"
+      },
+      {
+        "libelle":"Informations personnelles"
+      },
+      {
+        "libelle":"Informations sur la personne décédée"
+      },
+      {
+        "libelle":"Informations sur les ressources"
+      },
+      {
+        "libelle":"Résultat"
+      }
+    ]
+  },
+  "titre":"Tester mon éligibilité aux prestations veuvage",
+  "erreur":{
+      "NR":"Veuillez sélectionner une réponse"
+  },
+  "presentation":{
+    "intro":"En cas de décès de votre conjoint, vous pouvez bénéficier de la retraite de réversion ou de l'allocation veuvage. <br />L'attribution de ces prestations est soumise à conditions et dépend de votre situation maritale, de votre âge ou encore de vos ressources.",
+    "demarrer":"Démarrer ma simulation"
+  },
+  "etape1":{
+    "titre":"Informations personnelles",
+    "sousTitre":"Toutes les informations ci-dessous sont obligatoires.",
+    "dateNaissanceLegend":"Votre date de naissance",
+    "dateNaissance":"Votre date de naissance  :",
+    "situationPersoLegend":"Votre situation personnelle",
+    "enCouple":"Depuis le décès de votre conjoint(e) ou ex-conjoint(e), votre situation maritale a-t-elle évoluée (remariage, Pacs, concubinage) ?",
+    "marie":"Avez-vous été marié(e) avec la personne décédée ?",
+    "marieMomentDeces":"Etiez-vous marié(e) avec la personne décédée au moment de son décès ?",
+    "erreur":{
+      "date_naissance":"Veuillez indiquer votre date de naissance",
+      "intervalle_jour":"Votre jour de naissance est incorrect",
+      "intervalle_mois":"Votre mois de naissance est incorrect",
+      "intervalle_annee":"Votre année de naissance est incorrecte",
+      "date_invalide":"La saisie de votre date de naissance est incorrecte"
+    }
+  },
+  "etape2":{
+    "titre":"Informations sur la personne décédée",
+    "sousTitre":"Toutes les informations ci-dessous sont obligatoires.",
+    "dateDecesLegend":"Date du décès",
+    "dateDeces":"Saisissez la date de décès de votre conjoint(e) ou ex-conjoint(e)",
+    "cotisationsLegend":"Cotisations",
+    "cotisationRG":"La personne décédée a-t’elle exercé une activité relevant du régime général ? (salarié du secteur privé)",
+    "erreur":{
+      "date_deces":"Veuillez indiquer la date de décès",
+      "intervalle_jour":"Votre jour de décès est incorrect",
+      "intervalle_mois":"Votre mois de décès est incorrect",
+      "intervalle_annee":"Votre année de décès est incorrecte",
+      "date_invalide":"La saisie de votre date de décès est incorrecte",
+      "date_anterior" :"La date de décès ne doit pas être supérieure à la date du jour "
+    }
+  },
+  "etape3":{
+    "titre":"Informations sur les ressources",
+    "sousTitrePRCelibataire":"Indiquez les ressources brutes perçues sur la période demandée.",
+    "sousTitrePRCouple":"Vous avez déclaré que votre situation maritale a évolué (remariage, Pacs, concubinage). Veuillez indiquer les ressources brutes de votre conjoint(e).",
+    "sousTitreVeuvage":"Indiquez toutes les ressources personnelles brutes à l'exclusion de toutes les prestations servies par la Caf (AAH, RSA, APL, allocations familiales...).",
+    "ressourcesLegend":"Vos ressources",
+    "categoriesPR":[
+      {
+        "titre":"Revenus professionnels d'activité",
+        "code":"revenusProfessionnels",
+        "sousCategories":[
+          {
+            "titre":"Salaires et gains assimilés (gains assimilés : traitements, vacations, commissions)",
+            "titreCourt":"Salaires et gains assimilés",
+            "code":"salaires"
+          },
+          {
+            "titre":"Revenus professionnels des non-salariés (BIC, BNC, BA...)",
+            "titreCourt":"Revenus professionnels non-salariés",
+            "sousTitre":"Indiquez le montant annuel retenu par l'administration fiscale",
+            "code":"revenusIndustriels"
+          }
+        ]
+      },
+      {
+        "titre":"Retraites",
+        "code":"retraites",
+        "sousCategories":[
+          {
+            "titre":"Retraites personnelles de base",
+            "titreCourt":"Retraites personnelles de base",
+            "code":"base"
+          },
+          {
+            "titre":"Retraites personnelles complémentaires",
+            "titreCourt":"Retraites personnelles complémentaires",
+            "code":"complementaire"
+          }
+        ]
+      },
+      {
+        "titre":"Revenus de remplacement (Allocation chômage, Indemnités journalières)",
+        "titreCourt":"Revenus de remplacement",
+        "code":"revenusRemplacement",
+        "sousCategories":[
+          {
+            "titre":"Allocation chômage",
+            "code":"chomage"
+          },
+          {
+            "titre":"Indemnités journalières versées par la caisse d’assurance maladie (maladie, accident du travail, maladie professionnelle, maternité…)",
+            "titreCourt":"Indemnités journalières",
+            "code":"maladie"
+          }
+        ]
+      },
+      {
+        "titre":"Autres revenus (Pension alimentaire, Pension d’invalidité, Rente personnelle accident du travail, Prestations compensatoires)",
+        "titreCourt":"Autres revenus",
+        "code":"autresRevenus",
+        "sousCategories":[
+          {
+            "titre":"Pension alimentaire (hors aide alimentaire obligatoire)",
+            "titreCourt":"Pension alimentaire",
+            "code":"pensionAlimentaire"
+          },
+          {
+            "titre":"Pension d'invalidité",
+            "code":"pensionInvalidite"
+          },
+          {
+            "titre":"Prestations compensatoires",
+            "code":"prestationCompensatoire"
+          },
+          {
+            "titre":"Rente personnelle accident du travail",
+            "code":"renteAT"
+          }
+        ]
+      }
+    ],
+    "categoriesVeuvage":[
+      {
+        "titre":"Ressources actuelles",
+        "code":"avantCalcul"
+      },
+      {
+        "titre":"Ressources avant le décès",
+        "code":"avantDeces"
+      }
+    ],
+    "conjoint":{
+      "ressourcesLegend":"Ressources de votre conjoint(e) actuel(le)",
+      "categories":[
+        {
+          "titre":"Revenus professionnels d'activité",
+          "code":"revenusProfessionnels",
+          "sousCategories":[
+            {
+              "titre":"Salaires et gains assimilés (gains assimilés : traitements, vacations, commissions)",
+              "titreCourt":"Salaires et gains assimilés",
+              "code":"salaires"
+            },
+            {
+              "titre":"Revenus professionnels des non-salariés (BIC, BNC, BA...)",
+              "titreCourt":"Revenus professionnels non-salariés",
+              "sousTitre":"Indiquez le montant annuel retenu par l'administration fiscale",
+              "code":"revenusIndustriels"
+            }
+          ]
+        },
+        {
+          "titre":"Retraites",
+          "code":"retraites",
+          "sousCategories":[
+            {
+              "titre":"Retraites personnelles de base",
+              "code":"base"
+            },
+            {
+              "titre":"Retraites personnelles complémentaires",
+              "code":"complementaire"
+            },
+            {
+              "titre":"Retraites de réversion de base",
+              "code":"reversionBase"
+            },
+            {
+              "titre":"Retraites de réversion complémentaires",
+              "code":"reversionComplementaire"
+            }
+          ]
+        },
+        {
+          "titre":"Revenus de remplacement (Allocations chômage, Indemnités journalières)",
+          "titreCourt":"Revenus de remplacement",
+          "code":"revenusRemplacement",
+          "sousCategories":[
+            {
+              "titre":"Allocations chômage",
+              "code":"chomage"
+            },
+            {
+              "titre":"Indemnités journalières versées par la caisse d’assurance maladie (maladie, accident du travail, maladie professionnelle, maternité…)",
+              "titreCourt":"Indemnités journalières",
+              "code":"maladie"
+            }
+          ]
+        },
+        {
+          "titre":"Allocations",
+          "titreCourt":"Allocations",
+          "titreTooltip":"Exemple :<br/> APA : Allocation personnalisée d'autonomie<br/> ATA : Allocation travailleurs amiante<br/> RSA : Revenu de solidarité active <br/>...",
+          "code":"allocations"
+        },
+        {
+          "titre":"Autres revenus (Pension alimentaire, Pension d’invalidité, Rente personnelle accident du travail, Prestations compensatoires)",
+          "titreCourt":"Autres revenus",
+          "code":"autresRevenus",
+          "sousCategories":[
+            {
+              "titre":"Pension alimentaire (hors aide alimentaire obligatoire)",
+              "titreCourt":"Pension alimentaire",
+              "code":"pensionAlimentaire"
+            },
+            {
+              "titre":"Pension d'invalidité",
+              "code":"pensionInvalidite"
+            },
+            {
+              "titre":"Prestations compensatoires",
+              "code":"prestationCompensatoire"
+            },
+            {
+              "titre":"Rente personnelle accident du travail",
+              "code":"renteAT"
+            }
+          ]
+        }
+      ]
+    },
+    "erreur":{
+      "plafond_depasse":"Le montant trimestriel de vos ressources dépasse le plafond ; veuillez renseigner vos ressources sur les 12 mois demandés pour réévaluer votre situation.",
+      "erreur_saisie":"Si vous n'aviez pas de ressources, saisissez 0.",
+      "montant":"Le montant n'est pas valide."
+    }
+  },
+  "etape4":{
+    "titre":"Résultat",
+    "titre_eligible_pr":"Vous semblez réunir les conditions pour bénéficier d’une retraite de réversion.",
+    "titre_eligible_veuvage":"Vous semblez réunir les conditions pour bénéficier d’une allocation veuvage.",
+    "titre_nonEligible_pr":"Vous ne semblez pas réunir les conditions pour bénéficier d’une retraite de réversion.",
+    "titre_nonEligible_global":"Vous ne remplissez pas les conditions pour avoir droit à la retraite de réversion ou l'allocation veuvage.",
+    "titre_nonEligible_veuvage":"Vous ne semblez pas réunir les conditions pour bénéficier d’une allocation veuvage. ",
+    "lien_caisse_regionale":"https://www.lassuranceretraite.fr/portail-info/home/salaries/nos-contacts.html",
+    "sousTitre":"",
+    "lien_formulaire_demande_pr":"https://www.lassuranceretraite.fr/portail-info/files/live/sites/pub-bootstrap/files/Guides%20et%20formulaires/demande-retraite-reversion.pdf",
+    "lien_formulaire_demande_veuvage":"https://www.lassuranceretraite.fr/portail-info/files/live/sites/pub-bootstrap/files/Guides%20et%20formulaires/demande-allocation-veuvage.pdf",
+    "lien_demarches_pr":"https://www.lassuranceretraite.fr/portail-info/home/salaries/mes-demarches/deces-conjoint.html",
+    "lien_mes_aides":"http://www.mes-aides.gouv.fr",
+    "lien_espace_personnel":"http://www.lassuranceretraite.fr",
+    "lien_plafond_bareme":"http://www.legislation.cnav.fr/Pages/bareme.aspx?Nom=retraite_reversion_plafond_ressource_bar",
+    "lien_telechargement_formulaire_PR":"https://www.lassuranceretraite.fr/portail-info/home/retraites/publications-documentation/formulaires-a-telecharger.html#header-e9c55bd0-8404-49af-95f7-c9b35a49a454",
+    "motif_rejet_ve_405":"Vous avez déclaré ne pas être marié(e) avec la personne décédée or le mariage est une condition pour bénéficier de cette prestation.",
+    "motif_rejet_ve_406":"Vous avez déclaré ne pas être marié(e) avec la personne décédée au moment du décès or le mariage est une condition pour bénéficier de cette prestation.",
+    "motif_rejet_ve_408":"Vous avez déclaré que la personne décédée n’avait pas cotisé au régime général. Nous vous invitons à vous renseigner auprès des organismes auxquels a cotisé la personne décédée.Pour connaître ces organismes <a title=\"lien site info retraite \" href=\"https://www.info-retraite.fr/portail-info/home.html\"> cliquez ici.</a>",
+    "motif_rejet_ve_409":"Vous avez déclaré que le décès est survenu il y a plus de 2 ans or le décès déclaré dans les moins de 2 ans est une condition pour bénéficier de cette prestation.",
+    "motif_rejet_ve_410":"Vous avez déclaré que votre situation maritale a évolué (remariage, Pacs, concubinage) or vous ne devez pas vivre en couple pour bénéficier de cette prestation.",
+    "motif_rejet_ve_411":"Vous avez déclaré ne pas être marié(e) avec la personne décédée au moment du décès or le mariage est une condition pour bénéficier de cette prestation.",
+    "motif_rejet_ve_412":"Les ressources que vous avez déclarées dépassent <a title=\"lien plafond retraite \" href=\"http://www.legislation.cnav.fr/Pages/bareme.aspx?Nom=retraite_reversion_plafond_ressource_bar\"> le plafond autorisé.</a> Si vous souhaitez toutefois une étude plus approfondie de votre situation, déposez une demande auprès de nos services.",
+    "motif_rejet_ve_412_print" : "Les ressources que vous avez déclarées dépassent le plafond autorisé. Retrouvez ces plafonds dans la rubrique « En cas de décès de mon conjoint » sur www.lassuranceretraite.fr.",
+    "motif_rejet_ve_408_print": "Vous avez déclaré que la personne décédée n’avait pas cotisé au régime général. Nous vous invitons à vous renseigner auprès des organismes auxquels a cotisé la personne décédée."
+  },
+  "recap":{
+    "titre":"Rappel de vos saisies"
+  },
+  "rubrique1":{
+    "titre":"Informations personnelles",
+    "libDateNaiss":"Né(e) le ",
+    "libcploui":"Vous êtes en couple",
+    "libcplnon":"Vous êtes célibataire",
+    "libMarieConjointDcdOui":"Vous étiez marié(e) avec la personne décédée",
+    "libMarieConjointDcdNon":"Vous n'étiez pas marié(e) avec la personne décédée",
+    "libMarieMomentDecesOui":"Vous étiez marié(e) avec la personne décédée au moment du décès",
+    "libMarieMomentDecesNon":"Vous n'étiez pas marié(e) avec la personne décédée au moment du décès"
+  },
+  "rubrique2":{
+    "titre":"Informations sur la personne décédée",
+    "libdtdc":"Décédée le ",
+    "libaffilrgo":"Affilié(e) au Régime Général",
+    "libaffilrgn":"Non affilié(e) au Régime Général"
+  },
+  "rubrique3":{
+    "titre":"Informations sur les ressources",
+    "libressact":"Ressources actuelles",
+    "libressavtdc":"Ressources avant le décès",
+    "libvous":"Vos ressources",
+    "libvotrecjt":"Ressources de votre conjoint(e) actuel(le)"
+  }
+}

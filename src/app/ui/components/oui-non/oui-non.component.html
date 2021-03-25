@@ -1,0 +1,16 @@
+<div>
+  <button
+    class="un-styling-button"
+    name="left"
+    [ngClass]="buttonState.left ? 'active-element': 'desactive-element'"
+    (click)="select($any($event.target))">
+    Oui
+  </button>
+  <button
+    class="un-styling-button"
+    name="right"
+    [ngClass]="buttonState.right ? 'active-element': 'desactive-element'"
+    (click)="select($any($event.target))">
+    Non
+  </button>
+</div>

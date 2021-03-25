@@ -1,0 +1,12 @@
+<article>
+  <section id="recap-title">
+    <h2>{{ "Rappel de vos saisies" | uppercase }}</h2>
+  </section>
+  <section class="block">
+    <app-info-recapitulatif [titre]="titre.info" [information]="this.infoPerso"></app-info-recapitulatif>
+    <hr>
+    <app-info-recapitulatif [titre]="titre.conjointdcd" [information]="this.infoPersoDcd"></app-info-recapitulatif>
+    <hr>
+    <app-info-recapitulatif [titre]="titre.ressource" [information]="this.infoRessource"></app-info-recapitulatif>
+  </section>
+</article>

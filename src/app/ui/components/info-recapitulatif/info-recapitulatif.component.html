@@ -1,0 +1,9 @@
+<section>
+  <h3>{{titre}}</h3>
+  <span *ngIf="information.length === 0; else fillItem" class="empty"></span>
+  <ng-template #fillItem>
+    <ul *ngFor="let data of information">
+      <li>{{data}}</li>
+    </ul>
+  </ng-template>
+</section>

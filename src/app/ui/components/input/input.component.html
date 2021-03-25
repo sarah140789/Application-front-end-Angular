@@ -1,0 +1,7 @@
+<input [type]="type"
+       [placeholder]="placeholder"
+       [value]="value"
+       [disabled]="disabled"
+       (change)="onChange($any($event.target).value)"
+       (blur)="onTouched()"
+/>

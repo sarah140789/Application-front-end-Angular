@@ -1,0 +1,34 @@
+<!--nav>
+  <ul>
+    <li *ngFor="let etape of etapes">
+      <div  class="height" [innerHTML]="etapes?.libelle" [id]="etapes?.code" ></div>
+      <span class="round" text="Etape 2"  (click)="nRoute()"></span>
+      <div class="bordTop"></div>
+    </li>
+  </ul>
+</nav-->
+<nav>
+  <ul>
+    <li >
+      <div  class="height" [innerHTML]="etapes1?.libelle" id="etape1" ></div>
+      <span class="round" text="Etape 1" (click)="persoRoute()" ></span>
+      <div class="bordTop"></div>
+    </li>
+    <li >
+      <div  class="height" [innerHTML]="etapes2?.libelle" id="etape2" ></div>
+      <span class="round" text="Etape 2" (click)="conjointRoute()" ></span>
+      <div class="bordTop"></div>
+    </li>
+    <li >
+      <div  class="height" [innerHTML]="etapes3?.libelle" id="etape3" ></div>
+      <span class="round" text="Etape 3"  (click)="ressourceRoute()"></span>
+      <div class="bordTop"></div>
+    </li>
+    <li >
+      <div  class="height" [innerHTML]="etapes4?.libelle" id="etape4" ></div>
+      <span class="round" text="Etape 4" (click)="resultatRoute()" ></span>
+      <div class="bordTop"></div>
+    </li>
+  </ul>
+</nav>
+

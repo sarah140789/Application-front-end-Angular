@@ -1,0 +1,423 @@
+
+<app-timeline></app-timeline>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAV4AAACQCAMAAAB3YPNYAAAAw1BMVEX///8Acbn7ugAAZ7UAb7gAabYAbLcAZLQAbbf8//8AZrX7uAD7tgAAcrqHsNbw9vubvNypx+Lo8fjE2evb6PPP4O/v9fp6qNIAX7L2+/240eegwd+TudvL3e3i7fYAWbBknM0+icSzzeX94qj//fd0pdEsgMD80G1Pkcj/+On92Ir+8tf8xUKErtU+iMP+7ssber3+6Lz7wjP80nQAVa5cl8r8y1r7vyP/+ev95K791YD8yVL+785moM/+9d793p392Y6fZ/EoAAAV6UlEQVR4nO1diXbaOhA12JIXsMFgduMADYS2gTjto2mSpn3//1VPmpFs2RgSUvISlttzGryb0Wg0y5XQtDPOOOOMM84444wzzjjjjA+JVoh/6833fY9jw1MAf8Y6ynVcx911MhuFrfd6qSPAcORS9mfm840e8cewFzc1bToN+l7/vd7t8DE1Jo0G+/u04FvNpX0R8Q+xEOnSf7c3Owb4rvhQn/P/O6GQsyFsLz0bhtdgshi0+V9Xdvx+if9fatnDLv9AUKy2SWejwXu84CEjoKP6uMsUtNcNxK6oa2tawyy5MzJhmw7uD8x21J+823seJmyHd/0Bs7I9U3b+nslsrr/k+2dii6Efv9c7HjAmS/gzX7Ghy5M7LSbyFfd6e/+0tFq3H0VsxAtX7/WOB4lBPGT/L55gY2j2tEmXuw2aDZ6ujbocTrTaajyLzZo2ir1Jq/d+73tYmK1AViH6tr1/mAVYOX7QnDJ7MOGmOH9B1KxPZ+H//ZoHCn+Of1tdkGPvH665/tKdD84Kugd40pLGU/7/5Dxu7RVRd+U9TZkRCC4WPa3ZPYcMe8CgkXyMvEW46LI4N1qa5jjYctEZL4WpZZOL/oz/3zub273A9jpuW93Rn+3x7pc3t7c3v/d4w0NDhONYgqY+3Nu9f/+oIh7/XO7tpgeFxgXPyNhy0zNn+xvQbqqVMqJSrdzu7bYHBc+1tYBK89uu7e/OlxUpXRDw5/3d+UDQ49HvbOSbb1I5+1MtK6ienPo2KI9na2T2Nl5COYPqrzd5yMdFQDBT2+xGzPrO9+3mfsoob+Vuz7f/6Bjqbgc/dVxmfb3tZ++My0pWeT/t+f4fHP1u1DZFsmu2pPvzxgSuMuKtlPd9/w+OKOK5BSz0RvO9W99f1ZNWXkTz4q3YNndZ5T0ty9tyhX87uXibtNifnPKemFf2RESerH7xFomxn1npVr69wTM+NKailK550Rvc/UfObTg1n5eJtft2+dzbnPL+eLMnfUBMRuAvhBevdsbawbDVsDcfL+eU95TSDaNZ6EAMMXid29CcxkTXHcd92jQqfsmNaw+vftfDQ33F/FwCH19Rq7QHhkNLAMMyV4Xu8u+caTiliCICT8H1gZq3pX8Xo+8So5SCxkXyvc6ZhlNyyuxpt6n5bsc1w/bzZ+euXTmqcLl8l+tnfTrlcU3T/ItFbPOS2q6eQyOmpTycNfr0z6zulqs/9/Teh4KAvIp4FxjWmnSZBc6f9pgzDfd//8KHgmgOBqG3dBvPnbqGBjUKpFtycu5D3uV93MuLHwbaqy7O6Jnu7PP24iLdLZVIPXPaZc7lrZyWaWgaMZhcf9eS5Xzd7uLg1smcdnXCXgOH7f3zmrqErxdLt2SN1NNypqF6tZ+XPiQEzu5zTXqk0PBy7VVJKDnTcFJZ3pYl7G2ztH7w8/2fh4c/95voSosNpoGJVyVP5xNlJ8V+Ci9GEGTVSP7I7bdqtVqp8P9+3BRcuVl5S0SZknl/2gWgxpiTS7XBKLf/tppqXaVI5XyySbolM3XxPp+84e07sTfV84mCB7VPV67XLxsXO2UMhkKnvD5dw6v1xRDkjxZrPtm/WbbSWmnBNjcqL0mHyVwasnJKSV7b2ZJhyLpT6zmYlrNReWnSE26eL16iHemP5+N9c1beG/5oy8HLnGTy1neyyektkcRv+FnJmIbqn/XHdLCq1yGWfmxztUZy4m/h2gtZh2pNfQebRjbDTc75lpVuwbA2sfDv0ijpx7aWyUomDrtFKfR8x/6aPbzRcUiJq9+z9qVgeGx1ca6n5mTcjePAQOS9+/PCw1ndy6e5+hvESxbyjBwbsrxO9W9QIghXjqr0RwIbg9fehokT+VxBNraIij0HkjRVllBWKXAa7NjScXBlbWUVt/Eho+ESrx+am4bs7ZQwtyhoo2N5+HNuWPuavzsk3Bz85NHS3smuHwH+2BpvXFQor77ZeLZobEt19zLbNtWCsHrKVFa0xtwqCdq2Fk07EtODHez6WvCCd8+VdytZ6xmvqa+T5nlz0i1weOtsOJMqG7NrhQ/eiHUq4CzWrzoMLIPp4Pmae56ckPWsgmyJ2CBG2mLZhimqrTV5WELwikbX0Z0kFglkJs56ev0XfF8EddrWtGenq/27dXRrWVQRLvHS1rrORtQFWbII2sbBun9t2Gqlr9KTBbwDHu2azOq1eRIy3Dqk5JyznHPV6+iEWpZFiRmHStbi8Vnp1mBgNAoZQYlRN/Y50/b/xWg51HxuKuOtzIbPz9A/apPFar5a+BnC6vO6q80g3ZYtGkkwwWMyzlgr6B8MhlNdN/gqAnT7eXnv4XnmXd5nKOI0TLroaBQt18eU11qhfM0XfZUPiubUJJ3pc+7mrszGr+VnfQZmVUIwAHpRz3GZdCdoH5wDj5ObT+azrKerneoN99VMGr7I3+XoERgOC1wXprxm1BTiPfjFOV4wueoxJ9/HLesEXOUi4YJYDQDZYquA6wfKq7Uw27nHZQ7+V9g7zVn7kefmbhLaTTk3p3VjcQK8g6I4mB1gOhugeElmqUS731m6pXjky3dvDEYz151BcFdDtMWxNmzwTz1xgA0z/qIT9uXFYr+4xG7jRk9rhp6/bpOGdc9Txm+bbw+am4Q44Xy91sx9YZyfsw+V6peisz5fVbNm93qzmo/42EUKwnED3ImGEK+aYfcoC+d0h1giR9IYsc98B+XzxLom4AIbJLjgG7Bu6BKPXLTmJqGU8KnSmu3PDVPigr/F5B/cGC/ZWcQcZWtjoaETvluEObUFZWEQIbo+Kh4cphO+JkbYjOuFh9eQG9+Ykq75A5+/V3OEhu9bbuiCY7BOJubKGwnTzNQ7jYobMTFKdNYM6gRbpamzmEZ/agUjSpgW+Rjh6KhhMDRiVNI3RJBCLOkKTgxCIfJOL2mM0FexCHHZidRSPM0oJiVKXd0QbnqTkpI+9zi/jhbXABahZrtMNYKXOu73OdlVquU/Ss+/vH1cO2EboaFhFgcVtluiXAAaBm6pX9xzmSwMsNUdWAl0aBpS/DF8CZCPYeBgCQwX0Th1bCp9PGUC4SsyjsySFQ9tHlbxS9Az7QlZL3pabWyVLDfp+C0WX/KIdEgt4OgO2JOhhZfWJucm6s4NnqxqFQ0uhfh9l1PgSrV69/Dp5uvXm/sv15WccLfYZwDk4guCCqa8BFQ6Rl1K0ptTfgGqysTkIuRRn2GBDFbwrZ8sJc6bW6nlRvGaE8gvs+NzwloBLmzq6TNqNLVGDXYFkXYzSjZCmMw+MWUpHL5Ejq0o0Ajh2dMdyodf8iIsA4UHqDy5A9u9C01oF1mntXGlZf2TCAJQot+YhkDJt+pSMqjNmg9SnxnKl4XThVcNcscDYXcCDaUKXug4uDKydXguUIY0TOUNJIg1uWGPmO6K14qcjXE9ok13cSB+f1sTcDEqRSXhDJaQz1lLKIl+XCK6iIol8Q09CZK6wRiWqF+NKGEgjIxCtzFvih50/0lrcrNE8MhI0XEoHUpecpx0FXiQYCQGTw0kz4gRN8KnvFB6L8Bt+SUCrt5tNQwMPcvI0CEEbByFDCNsjqCvGlSM4OgHG+kCNCEcp2nGMgDahWgx1G1URaC7pM8Co6IoqdTxKU397F4qaug2SjeDNKp8Ctl72unTswKubPUYENgT1+y+UF6+QF0oRhoxcAhHzYrlQCLq1OmEEKysmr30RlLnMs/qQziDrYI8I8H+gv5kYmtCY6JTDv65Et0A80soP1q4PbMz7rebiOrdC2ZiDxSjl8JGdwE6+CAXFc+E32SIHbWuMCNLEVdDe0hDCBkhoXMTRdTZI4FqbvmzZbHaT2OemSJ1hrbq8fC+Zjg7z1R7Dr++lwtGM6G6hQFHHsVBBdpTfHlR5k/OaYm6tJHM2RckITpD+a4Sr1aTvR67cGYU7YH5EdroK+4LDFOW6Aud5JIePDalCKA/jad5/PMrWOcvwM1DuUC+ler1yyh68PXztBFheXUYnYYibEsylr6ZcyZGQr4EFRM8OTE09XTFUEB3lt0bLbRYtgIFj5f01SAdLQAf2sBMKEUT9KfBHvTZIcPMrgW5P3y9W/fG7jakx/Jo5HQCoSpvknRIo8qmoAw6UqEXcgfvujYmOHG0R3Yh3t+G+JCILoxjnsjSo+DxEo+mfcUuJa0/yVmxOYYr/X5/yp5BClzLveD2es0AVysv5p03i4IK8Cak8qKRyzrtLTTN6ZcNsQkcrpkYRYuR0Fe6cEMVqAhnhDaCFMUlEIeIiDpCJyS5k5L0R06zY5qmQ8ySt3e7y3H5Z919qFQfXr6caVgUVGSUV9OEq6BOFcUksKJLYCOF/kEg4qIdnipDejPTvZupTwCxWTKawTCFsZxog3HyUfHPwcIboed54eRtctE3V9UC4f7YZUIKWDA9G1T0FLeBAzlAaVSsSQOgNAsaaPwxEm7OpRRhuBc1/nom8wmRgLABquBR1MJ7g9bHfoMuWpo+4zakMEu9H/x6KPB7K9XH5+KILLiiyphK3aca5BlGGKrTjgZAqWCgOuMlvMmEYqM/K3ItOSclTu+AUkTBQ0NJ7w2dN2hnWzcy3EI+ABRnGf4aP2+vihwyprm7CRe9rFysnrW8mjCG2VrxhOT0GUSn4+gXmMkX97HXo6GYGZkm4d6U2AL3RQh+oNpYQ3HrnmiWusle8w3Ee3nz77d1mwBps++vmKe25GmSTJ0tZ3mFCjFRpDrewBxx6s71QeWkfvMwGi6PwMyIXm9D6JBWw3vMv0PHqqP2BUj7CImirysiMz7MqQVX38xmOv4al79vH74VZcUg6fvvq9bnjthAlIkme+hk6WnxB4ctoVGNdjsYQDYNfwqu12g3Wh1gUSVpiF5MS3QeNAaYbROGNMiH330mX33Qbq1ENQ9FisEZ3grzG7rwCgYma/SgxwHbT3qJrho9gdd8+QSff316uC4Xi5Yr7uOr514HJVIiT2nY5hGDQ+mGIe6BVCsv7TjEsKg5R90Nu6apU4MSlTtbWzqWpTuOE8OVBAo6E36bzBzciUMN4ji6C2dZMR8B2biaPn0AT7aWQmfrJrUcSikRbdQxKXUEx9B81XJvlzxFfnVXnMpNFfdvJlHZocu8R7lVoyWXgSqVS5+6iG7EZMQ/xGNP9tKRBTvmg2xJrD83iDEPpgZcCMq44LehGbZKexFT4noB3NQFRyTQ2SdjhMencHNXl40fdWK+bUmHMOjMXHhd9v/L1ff37Z+Hh+8/Hq/vKhty5Kpsv//9EnpRP9VeG6Eetu10Z/7g2snJgXZu9/p9OaCGrD5TPcve8DJFL7f9Gyb4zRwuLlHARrGCaLlsXxj8noG436arWXv77cvpLf34tyhKf61rbbV8dX9ay7TsCc/aA6a13zeu63DGM8ixcFK5wij37erTzbPurZ3H//Heh4IrxVOA4Y2LtXz3+OXTS386qesQQnRODGLgH3V3+nxOyd9lttXcZPftJu7G8ICmBnz98lhG0kK5fP3j6uHT7a+fuwRkdl1wjSzHZP8gLqXm9jKfXXe7u/zcOdY4hCffHHcPSLyIy7/4CSosPmKoH3Uw5DS3UNhqIadq7bBIew2DVfg8mTnWUc4z3AgsjcvvLJYjKCDpSXR5boDsELUPU8rSiBfeiviVx4spkrTkd17h5kb1jdQq+IugVO+RePMW67t/WGD+W/I+RCW9eOpPcnzz4QJgiYenJaCyYVin5JygZUxzoZjW2zzxL6RblbsAbhdY0FqO/3EawLpXWnqESlZ2Ob4MoKT9ygVIssSbkwDyw1J1rOfrjjkgkeZ15nMTffWIgcWblOyGpnjjAi448eqV5M25Uro5EWAd3ZSOFjpmSOTnaC2WrhHPPVHOChfIuBvU674d1gETrT+KCZ2Jcm/Lr0vwWQp4Usiu9+tQpKce2xSPG05nbimehwc/DW4TkNeUlCKxnGhI7lE0digLky2LOrDU9fACK2nUNLtPrQtORyf6aOwwrTRgva3awtA5FwaPzHj5Bz6afc2mOhbTdHYYnIfWTKcsELcs4oyO1JtAP0wON8hXMuSaUL5pGSSMmtzeUiBlIIXMGnneoqkNkeJgEZ1FGgZM89Gpoa88z5snjH605WCswe4YM3YtWPqQF38HUZ9zmmh8nPL1aFrXbT2BflmmCDEGTLMdLmkQKgXnAgiNssKNy5o4Ty3WALyFOnz+AhybJoyOdlpR91KaooZMPiinQwuTg13AZCsEty3QZroDEyMsfSncgr6Z8GdAqECfwbkSeAJSSKAw3yDsFrzCLgauOJmD0VJCYpV4M3AS/ocyjerIgLRkTmzyxAIlI+nS1mB2AhrhsSGc3UxggBtYBqdjaA4RjiDtCcyJn85ywkZK2YySkIM0k2MMlYUtHctwQi6gpWEsK5lLqIxDGRKLiScTZaPVBl0W/jPcFsdLDIm5mgI5WoqU9xpp8clWV/CQ4SfcUDFdNYnHGgrlE49xTfbUwMDLxMdeOkFQCH7EPy4T4heaCSR1wJyAdCW/g17AZAuUdNkyS3IGaQlDmZKX5woxXGzIgMRQJgYogsdkL/dzFTOR4YYNjjdUVtJlOGUqSbioDEWYhMtn9aKZlNm1zPTtpqqDaSsoxrqTmAkxHUNHrg63PIZ+jLYBSYUY4w6RjScGMyTxoyWGn7mAH91rq8RwnMwkOzUorKQ3xok1VfKX4KQgYxxNPt4Huom5S3HpYIDpMvRobWQoCorWMJ37y7mbBnLuhiojP7OBuQthWtDXBfctNRO2m7IZFdscOrzOd5xpHpEeQ08fic/COILWGfF8Pp/pBtVjNLfKvLz8wiRgusU8X4Wen5qJtjLtp57cPSYGNXf+NbQDQSZdJpjQaHwxWCYmJ4zGyZKbSAYXfMi0CsGh2mplxnpqrHGC3yg9oaTj3TtHm0Jz0dcVM3LR+OJs0CHOFWlEUUOpWoL2ZkLihJ7PW0rOu3hKZqwrs3hAe0VIPMGJO1H27seGhqqvcpoEOmM1cEzzv9oALWAK7idmfqV4uJHNzFgHwSv2GeYBCk+P+xNGwa/xHBdE2VLO/s8YXz6Nws2nsWzeAshYEJFZUjhrpSFxLV0qQLXPPOUgZlXx+Hh9Yv2xQU2XadIiitzvhE9VWuu5fN6ImBmFhbN0YYaZJYUNDi5+Ts0EX0UnDfiYnT++NdfzmMt0GSIQ81DEdNKidbu5AREBlpcrnHH1hb5fd1JvLzN9ilMopExjq3ghymOCZWTMpygMieGnNyMGefIFpO/Q0plcFrwBsiExw6DLp7mHS7HgC//VY5yPKdNE9oyvCh7A4xouNUhH3v0ofYegy2fJkJR3sMLluU0Re3V04sgl2RJSXxDrFl+zzS4RdmpXJUv1SzoluhnPCdy3W9Na3cwD7JHDLkGF740coqsLvh0dWguPYZFO62nCjnRPbRJ6iIXi+PdXscNXWIb92Tv2O6vpRJuI24gnLBQj0JrOTKnwjeTunWNMOPwF/qYwdpxFtTPOOOOMM84444wzzjjjpPEfhMOC9CKzV1UAAAAASUVORK5CYII="/>
+<div class="right">
+    <aside>
+      <app-recapitulatif></app-recapitulatif>
+    </aside>
+
+</div>
+<h1 class="mi"[innerHTML]="i18n.etape3.titre"></h1>
+<br>
+<!--PR celibataire-->
+<p class="ress"[innerHTML]="i18n.etape3.sousTitrePRCelibataire"></p>
+<img class="img"src="https://www.lassuranceretraite.fr/simulPR-sapp-ng/media/images/simPR/ress1_sal.png"/>
+<p [innerHTML]="i18n.etape3.ressourcesLegend" class="pst"></p>
+<div><p [innerHTML]="i18n.etape3.categoriesPR[0].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€">
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[0].titre"></p>
+    <p [innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[0].titreCourt"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="salaires" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="salaires" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="salaires" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].titre"></p>
+    <p [innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].titreCourt"></p>
+    <p [innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].sousTitre"></p>
+    <input class="input" type="text" name="revenusIndustriels" placeholder="0" />€
+    <input type="hidden"  >   
+</div>
+</div>
+<br>
+<div><p [innerHTML]="i18n.etape3.categoriesPR[1].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€2">
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[1].sousCategories[0].titre"></p>
+    <p [innerHTML]="i18n.etape3.categoriesPR[1].sousCategories[0].titreCourt"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="base" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="base" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="base" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[0].sousCategories[1].titre"></p>
+    <p [innerHTML]="i18n.etape3.categoriesPR[1].sousCategories[1].titreCourt"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="complementaire" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="complementaire" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="complementaire" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <input type="hidden"  >    
+</div>
+</div>
+<br>
+<div ><p [innerHTML]="i18n.etape3.categoriesPR[2].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€3">
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[0].titre"></p>
+    <p [innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[0].titreCourt"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="chomage" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="chomage" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="chomage" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[1].titre"></p>
+    <p [innerHTML]="i18n.etape3.categoriesPR[2].sousCategories[1].titreCourt"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="maladie" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="maladie" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="maladie" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <input type="hidden"  >    
+</div>
+</div>
+<br>
+<div ><p [innerHTML]="i18n.etape3.categoriesPR[3].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€4">
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[0].titre"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="pensionalimentaire" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="pensionalimentaire" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="pension alimentaire" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[1].titre"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[2].titre"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <p class="sousc"[innerHTML]="i18n.etape3.categoriesPR[3].sousCategories[3].titre"></p>
+    <div class="container">
+        <div class="row">
+        <div class="col-sm1">
+        <input class="input" type="text" name="renteAT" placeholder="0" />€
+        </div>
+        <div class="col-sm2">
+        <input class="input" type="text" name="renteAT" placeholder="0" />€
+        </div>
+        <div class="col-sm3">
+        <input class="input" type="text" name="renteAT" placeholder="0" />€   
+    </div>
+    </div>
+    </div>
+    <input type="hidden"  >    
+</div>
+</div>
+
+<br>
+<!--PR veuvage-->
+<p class="ress"[innerHTML]="i18n.etape3.sousTitreVeuvage"></p>
+<img class="img"src="https://www.lassuranceretraite.fr/simulPR-sapp-ng/media/images/simPR/ress1_sal.png"/>
+<p [innerHTML]="i18n.etape3.ressourcesLegend" class="pst"></p>
+<div ><p [innerHTML]="i18n.etape3.categoriesVeuvage[0].titre" class="ps"></p>
+    <input type="checkbox" class="checkbox" role="button">
+    <div id="€5">
+            <p class="sousc"[innerHTML]="i18n.etape3.categoriesVeuvage[0].titre"></p>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm1">
+                <input class="input" type="text" name="avantCalcul" placeholder="0" />€
+                </div>
+                <div class="col-sm2">
+                <input class="input" type="text" name="avantCalcul" placeholder="0" />€
+                </div>
+                <div class="col-sm3">
+                <input class="input" type="text" name="avantCalcul" placeholder="0" />€   
+            </div>
+            </div>
+            </div>
+            <input type="hidden"  >    
+    </div>
+    </div>
+    <br>
+    <div ><p [innerHTML]="i18n.etape3.categoriesVeuvage[1].titre" class="ps"></p>
+    <input type="checkbox" class="checkbox" role="button">
+    <div id="€6">
+            <p class="sousc"[innerHTML]="i18n.etape3.categoriesVeuvage[1].titre"></p>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm1">
+                <input class="input" type="text" name="avantdeces" placeholder="0" />€
+                </div>
+                <div class="col-sm2">
+                <input class="input" type="text" name="avantdeces" placeholder="0" />€
+                </div>
+                <div class="col-sm3">
+                <input class="input" type="text" name="avantdeces" placeholder="0" />€   
+            </div>
+            </div>
+            </div>
+            <input type="hidden"  >    
+    </div>
+    </div>
+    <br>
+<!--PR couple-->
+<p class="ress"[innerHTML]="i18n.etape3.sousTitrePRCouple"></p>
+<img class="img"src="https://www.lassuranceretraite.fr/simulPR-sapp-ng/media/images/simPR/ress1_sal.png"/>
+<p [innerHTML]="i18n.etape3.conjoint.ressourcesLegend" class="pst"></p>
+<div><p [innerHTML]="i18n.etape3.conjoint.categories[0].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€7">
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[0].titre"></p>
+        <p [innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[0].titreCourt"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="salaires" placeholder="0" />€
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="salaires" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="salaires" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[1].titre"></p>
+        <p [innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[1].titreCourt"></p>
+        <p [innerHTML]="i18n.etape3.conjoint.categories[0].sousCategories[1].sousTitre"></p>
+        <input class="input" type="text" name="revenusIndustriels" placeholder="0" />€
+        <input type="hidden"  >   
+</div>
+</div>
+<br>
+<div ><p [innerHTML]="i18n.etape3.conjoint.categories[1].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€8">
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[0].titre"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="base" placeholder="0" />€
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="base" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="base" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[1].titre"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="complementaire" placeholder="0" />€
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="complementaire" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="complementaire" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[2].titre"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="reversionBase" placeholder="0" />€
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="reversionBase" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="reversionBase" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[1].sousCategories[3].titre"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="reversionComplementaire" placeholder="0" />€
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="reversionComplementaire" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="reversionComplementaire" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <input type="hidden"  >    
+</div>
+</div>
+<br>
+<div ><p [innerHTML]="i18n.etape3.conjoint.categories[2].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€9">
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[0].titre"></p>
+        <p [innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[0].titreCourt"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="chomage" placeholder="0" />€
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="chomage" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="chomage" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[1].titre"></p>
+        <p [innerHTML]="i18n.etape3.conjoint.categories[2].sousCategories[1].titreCourt"></p>
+        <div class="container">
+            <div class="row">
+            <div class="col-sm1">
+            <input class="input" type="text" name="maladie" placeholder="0" />€
+            </div>
+            <div class="col-sm2">
+            <input class="input" type="text" name="maladie" placeholder="0" />€
+            </div>
+            <div class="col-sm3">
+            <input class="input" type="text" name="maladie" placeholder="0" />€   
+        </div>
+        </div>
+        </div>
+        <input type="hidden"  >    
+</div>
+</div>
+<br>
+<div ><p [innerHTML]="i18n.etape3.conjoint.categories[3].titre" class="ps"></p>
+<input type="checkbox" class="checkbox" role="button">
+<div id="€10">
+            <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[3].sousCategories[0].titre"></p>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm1">
+                <input class="input" type="text" name="pensionalimentaire" placeholder="0" />€
+                </div>
+                <div class="col-sm2">
+                <input class="input" type="text" name="pensionalimentaire" placeholder="0" />€
+                </div>
+                <div class="col-sm3">
+                <input class="input" type="text" name="pension alimentaire" placeholder="0" />€   
+            </div>
+            </div>
+            </div>
+            <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[3].sousCategories[1].titre"></p>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm1">
+                <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€
+                </div>
+                <div class="col-sm2">
+                <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€
+                </div>
+                <div class="col-sm3">
+                <input class="input" type="text" name="pensionInvalidite" placeholder="0" />€   
+            </div>
+            </div>
+            </div>
+            <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[3].sousCategories[2].titre"></p>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm1">
+                <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€
+                </div>
+                <div class="col-sm2">
+                <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€
+                </div>
+                <div class="col-sm3">
+                <input class="input" type="text" name="prestationCompensatoire" placeholder="0" />€   
+            </div>
+            </div>
+            </div>
+            <p class="sousc"[innerHTML]="i18n.etape3.conjoint.categories[3].sousCategories[3].titre"></p>
+            <div class="container">
+                <div class="row">
+                <div class="col-sm1">
+                <input class="input" type="text" name="renteAT" placeholder="0" />€
+                </div>
+                <div class="col-sm2">
+                <input class="input" type="text" name="renteAT" placeholder="0" />€
+                </div>
+                <div class="col-sm3">
+                <input class="input" type="text" name="renteAT" placeholder="0" />€   
+            </div>
+            </div>
+            </div>
+            <input type="hidden" >    
+</div>
+</div>
+        
+<br>
+<app-button text="Etape précédente personnel" position="left" (click)="previousRoute()" class="to-left"></app-button>
+<app-button text="Etape suivante conjoint dcd" position="right" (click)="nextRoute()" class="to-right"></app-button>
+<div class="bordTop"></div>
+<br>

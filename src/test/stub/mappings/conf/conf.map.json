@@ -1,0 +1,14 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/conf"
+  },
+  "response": {
+    "status": 200,
+    "fixedDelayMilliseconds": 2000,
+    "bodyFileName": "conf/conf.get.200.json",
+    "headers": {
+      "Content-Type": "application/json;charset=utf-8"
+    }
+  }
+}
